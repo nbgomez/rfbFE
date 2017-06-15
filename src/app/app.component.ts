@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { Hero } from './hero';
 import { HeroDetailComponent } from './hero-detail/hero-detail.component';
 
-/* https://angular.io/tutorial/toh-pt3*/
+/* https://angular.io/tutorial/toh-pt4*/
 
 const HEROES: Hero[] = [
   { id: 11, name: 'Mr. Nice' },
