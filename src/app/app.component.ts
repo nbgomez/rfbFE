@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Hero } from './hero';
+import { HeroDetailComponent } from './hero-detail/hero-detail.component';
 
 /* https://angular.io/tutorial/toh-pt3*/
 
@@ -29,13 +30,7 @@ const HEROES: Hero[] = [
         <span class="badge">{{hero.id}}</span>{{hero.name}}
       </li>
     </ul>
-    <div *ngIf="selectedHero">
-      <h2>{{selectedHero.name}} details</h2>
-      <div>
-        <label>name: </label>
-        <input [(ngModel)]="selectedHero.name" placeholder="name">
-      </div>
-    </div>
+    <app-hero-detail [hero]="selectedHero"></app-hero-detail>
     `,
   styleUrls: ['./app.component.css']
 })
