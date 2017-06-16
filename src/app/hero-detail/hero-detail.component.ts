@@ -4,11 +4,11 @@ import { Hero } from '../hero';
 @Component({
   selector: 'app-hero-detail',
   template: `
-    <div *ngIf="selectedHero">
-      <h2>{{selectedHero.name}} details</h2>
+    <div *ngIf="hero">
+      <h2>{{hero.name}} details</h2>
       <div>
         <label>name: </label>
-        <input [(ngModel)]="selectedHero.name" placeholder="name">
+        <input [(ngModel)]="hero.name" placeholder="name">
       </div>
     </div>
   `/*,
