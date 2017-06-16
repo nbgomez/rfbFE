@@ -8,7 +8,8 @@ import { Component, OnInit } from '@angular/core';
   /*templateUrl: './app.component.html',*/
   template: `
     <h1>{{title}}</h1>
-    <my-heroes></my-heroes>
+    <a routerLink="/heroes">Heroes</a>
+    <router-outlet></router-outlet>
     `,
   styleUrls: ['./app.component.css']
 })
