@@ -3,7 +3,7 @@ import { Hero } from './hero';
 import { HeroService } from  "./hero.service";
 import { HeroDetailComponent } from './hero-detail/hero-detail.component';
 
-/* https://angular.io/tutorial/toh-pt4*/
+/* https://angular.io/tutorial/toh-pt5*/
 
 @Component({
   selector: 'app-root',
