@@ -1,25 +1,34 @@
 import { Component, OnInit } from '@angular/core';
+import { MdSidenav, MdSidenavContainer } from '@angular/material'
 
 
-/* https://angular.io/tutorial/toh-pt5*/
 
 @Component({
   selector: 'app-root',
   /*templateUrl: './app.component.html',*/
   template: `
     <h1>{{title}}</h1>
-    <nav>
-      <a routerLink="/dashboard">Dashboard</a>
-      <a routerLink="/heroes">Heroes</a>
-    </nav>
+    <md-sidenav-container>
+      <md-sidenav mode="push" opened="true"> 
+        ITN Historian 
+        <app-dashboard></app-dashboard>
+      </md-sidenav>
+  
+      test<br>
+      test2
+      
+      
+      
     
-    <router-outlet></router-outlet>
+    
+    </md-sidenav-container>
+    
     `,
   styleUrls: ['./app.component.css']
 })
 
 export class AppComponent  implements OnInit {
-  title = 'Tour of Heroes';
+  title = 'ITN RFB Historian';
   
   constructor(  ) {};
 
