@@ -11,6 +11,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 
 import { AppRoutingModule } from './app-routing.module';
 import { MdSidenavModule } from '@angular/material';
+import { TreeModule } from 'angular-tree-component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { MdSidenavModule } from '@angular/material';
     BrowserModule,
     FormsModule,
     AppRoutingModule,
-    MdSidenavModule
+    MdSidenavModule,
+    TreeModule
   ],
   providers: [
     HeroService
